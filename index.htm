@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+		<meta charset="UTF-8">
+	
+		<style>
+
+			body {
+				background-color	: black;
+				color				: yellow;
+				font				: 10pt arial;
+			}
+			
+			button {
+				background-color	: black;
+				color				: yellow;
+				font				: 10pt arial;
+				border				: 2px solid red;
+				border-radius		: 10px;
+			}
+			
+			select {
+				background-color	: black;
+				color				: yellow;
+				font				: 10pt arial;
+				border				: 2px solid red;
+				border-radius		: 10px;
+			}
+			
+			button:hover {
+				border				: 2px dashed red;
+			}
+			
+			#leaderboard_div {
+				display				: none;
+			}
+			
+			#entry_history_div {
+				display				: none;
+			}
+			
+			#date_range_view_div {
+				display				: none;
+			}
+			
+			.entry_history_header_cell {
+				text-align			: right;
+				font-weight			: bold;
+				color				: chartreuse;
+			}
+			
+			.entry_history_cell {
+				text-align			: right;
+			}
+			
+			.entry_history_team_cell {
+				text-align			: right;
+				color				: aqua;
+				font-weight			: bold;
+				font-style			: italic;
+			}
+			
+			.entry_history_ft_result_cell {
+				text-align			: right;
+				color				: aqua;
+				font-weight			: bold;
+				font-style			: italic;
+			}
+			
+			.entry_history_match_prediction_cell {
+				text-align			: right;
+				color				: red;
+				font-weight			: bold;
+			}
+			
+			.entry_history_score_prediction_cell {
+				text-align			: right;
+				color				: chartreuse;
+				font-weight			: bold;
+			}
+			
+			.entry_history_total_points_cell {
+				text-align			: right;
+				color				: orange;
+				font-weight			: bold;
+			}
+		
+		</style>
+		
+		<script src="entries.js"></script>
+		<script src="marked_entries.js"></script>
+		<script src="karls_marked_fixtures.js"></script>
+		<script src="mick_lib.js"></script>
+		<script src="js.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+	
+	</head>
+	
+	<body onload="initialise_page()">
+	
+		<!-- horizontal bar at the top of the screen -->
+		<table align="center">
+			<tr>
+				<td style="height: 2px; width: 700px; background-color: red; border-radius: 4px;">
+				</td>
+			</tr>
+		</table>
+	
+		<!-- webpage title -->
+		<table align="center">
+			<tr>
+				<td style="font: 24pt arial;">
+					RICH PICK KINGS RESULTS
+				</td>
+			</tr>
+		</table>
+
+		<!-- horizontal bar to separate the title from the -->
+		<!-- navigation buttons -->
+		<table align="center">
+			<tr>
+				<td style="height: 2px; width: 700px; background-color: red; border-radius: 4px;">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- navigation buttons -->
+		<table align="center">
+			<tr>
+				<td style="width: 150px;" align="center">
+					<button onclick="leaderboard_navigation_button_has_been_pressed()">LEADERBOARD</button>
+				</td>
+				<td style="width: 20px;">
+				</td>
+				<td style="width: 150px;" align="center">
+					<button onclick="entry_history_button_has_been_pressed()">ENTRY HISTORY</button>
+				</td>
+				<td style="width: 20px;">
+				</td>
+				<td style="width: 150px;" align="center">
+					<button onclick="date_range_view_button_has_been_pressed()">DATE RANGE VIEW</button>
+				</td>
+			</tr>
+		</table>
+		
+		<!-- horizontal bar to separate the navigation buttons from -->
+		<!-- the individual screens -->
+		<table align="center">
+			<tr>
+				<td style="height: 2px; width: 700px; background-color: red; border-radius: 4px;">
+				</td>
+			</tr>
+		</table>
+		
+		<!-- start of leaderboard div -->
+		<div id="leaderboard_div">
+			
+			LEADERBOARD DIV
+			
+		</div>
+		<!-- end of leaderboard div -->
+		
+		<!-- start of entry history div -->
+		<div id="entry_history_div">
+			
+			ENTRY HISTORY DIV
+			
+		</div>
+		<!-- end of entry history div -->
+		
+		<!-- start of date range view div -->
+		<div id="date_range_view_div">
+			
+			DATE RANGE VIEW DIV
+			
+		</div>
+		<!-- end of date range view div -->
+	
+	</body>
+
+</html>

@@ -1,0 +1,41 @@
+==============================================
+RICH PICK KINGS RESULTS WEBPAGE - DESIGN NOTES
+==============================================
+
+Three sections:
+
+Section #1 - Leaderboard
+A simple leaderboard, which displays for each player:
+USERNAME,TOTAL ENTRIES,TOTAL MATCH RESULTS CORRECT,TOTAL CORRECT SCORES CORRECT,TOTAL POINTS
+
+Section #2 - Player Entry History
+Select a player and their entire entry history will be displayed.
+
+Section #3 - Week by Week breakdown
+Select a week from the dropdown menu and see (in pie chart and % graph form) how many points each player won that week.
+The two graphs at the top of the page will be:
+1. a bar chart displaying how many points each player won that week
+2. a pie chart displaying what percentage of the total points won that week each player has won
+It will look like this:
+
+<DROPDOWN MENU WHERE YOU CAN SELECT THE WEEK TO VIEW>
+(Menu selections are in the format:
+Week #4 - Mon 3rd March 2019 to Sun 9th March 2019)
+
++--------------------------------------+-----------------------------------+
+|                                      |  <TOTAL POINTS WON THAT WEEK>     |
+|                                      |                                   |
+|                                      |                                   |
+|    <BAR CHART SHOWING TOTAL          |  <PIE CHART DISPLAYING % OF       |
+|     POINTS FOR EACH PLAYER >         |   TOTAL POINTS WON THAT WEEK      |
+|                                      |   THAT EACH PLAYER HAS WON  >     |
+|                                      |                                   |
+|                                      |                                   |
+|                                      |                                   |
+|                                      |                                   |
+|                                      |                                   |
+|                                      |                                   |
+|                                      |                                   |
++--------------------------------------+-----------------------------------+
+
+
